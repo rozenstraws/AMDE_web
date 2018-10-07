@@ -1,11 +1,173 @@
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web de la AMDE (Asociación Mendocina de Deportes Electrónicos)">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>AMDE | Página web</title>
 </head>
 <body>
-    
+    <header id="amde-header">
+        <nav>
+            <ul class="nav-elements">
+                <li>
+                    <img src="./Assets/img/header_logo.jpg" alt="Logo de la AMDE.">
+                </li>
+                <li class="nav-element" id="nav-cover">HOME</li>
+                <li class="nav-element" id="nav-info">¿QUIENES SOMOS?</li>
+                <li class="nav-element" id="nav-contact">CONTACTO</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="amde-cover">
+        PORTADA
+        <div>
+            <h2>QUEREMOS QUE LOS <span class="h2-bolder">DEPORTES ELECTRÓNICOS CREZCAN Y SE FORTALEZCAN</span></h2>
+        </div>
+    </section>
+    <section id="amde-services">
+        <div>
+            <img src="./Assets/img/ico1.jpg" alt="Ícono de Generamos Espacios">
+            <p>GENERAMOS ESPACIOS</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia pariatur saepe rem voluptate corporis, sequi molestias dolor exercitationem!</p>
+        </div>
+        <div>
+            <img src="./Assets/img/ico2.jpg" alt="Ícono de Ayudamos a Jugadores y Equipos">
+            <p>AYUDAMOS A JUGADORES Y EQUIPOS</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia pariatur saepe rem voluptate corporis, sequi molestias dolor exercitationem!</p>
+        </div>
+        <div>
+            <img src="./Assets/img/ico3.jpg" alt="Ícono de Formamos Árbitros">
+            <p>FORMAMOS ÁRBITROS</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia pariatur saepe rem voluptate corporis, sequi molestias dolor exercitationem!</p>
+        </div>    
+    </section>
+    <section id="amde-info">
+        <div>
+            <h2>¿QUIÉNES SOMOS?</h2>
+            <p>Somos un grupo de personas amantes de los videojuegos y el mundo de los deportes electrónicos.</p>
+            <p>La AMDE fue creada con la intención de poder fortalecer la escena competitiva en Mendoza y en la región,
+                buscando propiciar un espacio para el desarrollo de la actividad y ayudando a quienes intervienen en
+                esta escena a través de la realización de eventos y torneos. También brindamos apoyo a
+                desarrolladores y jugadores que deseen ser parte de este creciente mundo.
+            </p>
+        </div>
+    </section>
+    <section id="amde-members">
+        <div>
+            <img src="./Assets/img/logo.jpg" alt="Logo de la AMDE.">
+        </div>
+        <div>
+            <!-- GRID MIEMBROS -->
+            <div>
+                <img src="./Assets/img/member1.jpg" alt="Foto de {Nombre Miembro}">
+                <p>(Nombre de Miembro 1)</p>
+            </div>     
+            <div>
+                <img src="./Assets/img/member2.jpg" alt="Foto de {Nombre Miembro}">
+                <p>(Nombre de Miembro 2)</p>
+            </div>  
+            <div>
+                <img src="./Assets/img/member3.jpg" alt="Foto de {Nombre Miembro}">
+                <p>(Nombre de Miembro 3)</p>
+            </div>  
+            <div>
+                <img src="./Assets/img/member4.jpg" alt="Foto de {Nombre Miembro}">
+                <p>(Nombre de Miembro 4)</p>
+            </div>  
+            <div>
+                <img src="./Assets/img/member5.jpg" alt="Foto de {Nombre Miembro}">
+                <p>(Nombre de Miembro 5)</p>
+            </div>     
+            <div>
+                <img src="./Assets/img/member6.jpg" alt="Foto de {Nombre Miembro}">
+                <p>(Nombre de Miembro 6)</p>
+            </div>  
+            <div>
+                <img src="./Assets/img/member7.jpg" alt="Foto de {Nombre Miembro}">
+                <p>(Nombre de Miembro 7)</p>
+            </div>  
+            <div>
+                <img src="./Assets/img/member8.jpg" alt="Foto de {Nombre Miembro}">
+                <p>(Nombre de Miembro 8)</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>200</p>
+                <p>SOCIOS</p>
+            </div>   
+            <div>
+                <p>7</p>
+                <p>EQUIPOS ASOCIADOS</p>
+            </div>      
+            <div>
+                <p>5</p>
+                <p>EVENTOS Y TORNEOS</p>
+            </div> 
+        </div>
+    </section>
+    <section id="amde-participate">
+        <div>
+            <img src="./Assets/img/logo_solo.jpg" alt="Logo de la AMDE.">
+        </div>
+        <div>
+            <h2>¿QUERÉS SER PARTE?</h2>
+            <P>Buscamos gente que quiera sumarse a esta gran
+                organización, podés formar parte de las secretarías,
+                conformarte en el gran grupo de voluntarios, o ser
+                socio y hacer que tu opinión en este gran ambiente sea 
+                escuchada.
+            </P>
+        </div>
+    </section>
+    <section id="amde-contact">
+        <div>
+            <h2>CONTACTANOS</h2>
+            <div>
+                <p>Nombre y Apellido: </p>
+                <input id="contact-name" type="text" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div>
+                <p>Email: </p>
+                <input id="contact-email" type="text" name="email" placeholder="Tu email" required>
+            </div>            
+            <div>
+                <p>Mensaje: </p>
+                <textarea id="contact-message" name="message" placeholder="Tu mensaje..." required></textarea>
+            </div>
+            <div>
+                <!-- ALERTA DE ENVIO DE DATOS DE FORMULARIO -->
+                <p id="contact-alert"></p>
+                <button id="contact-button" type="submit">ENVIAR</button>
+            </div>
+        </div>
+    </section>
+    <footer id="amde-footer">
+        <div>
+            <h2>REDES SOCIALES</h2>
+            <p>¡Seguinos! Mantenete al día con todo lo que pasa en el mundo de los
+                deportes electrónicos y las novedades que tenemos de AMDE para vos.
+            </p>
+            <i class="youtube">
+                <!-- FALTA linkear a youtube de AMDE -->
+                <a href="https://www.youtube.com/" target="_blank"></a> 
+            </i>
+            <i class="facebook">
+                <a href="https://facebook.com/amdeorgar/" target="_blank"></a>
+            </i>
+            <i class="twitter">
+                <a href="https://twitter.com/amdeorgar" target="_blank"></a>
+            </i>
+            <i class="instagram">
+                <a href="https://www.instagram.com/amdeorgar" target="_blank"></a>
+            </i>
+        </div>
+        <div>
+            Secretaría de Desarrollo - Asociación Mendocina de Deportes Electrónicos
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
