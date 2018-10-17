@@ -49,7 +49,7 @@ p {
 #amde-header .nav-elements {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 40vw;
 }
 
 #amde-header .nav-elements .nav-element {
@@ -69,10 +69,69 @@ p {
     background-image: url(./Assets/images/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#amde-cover .cover-text-bg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#amde-cover .cover-text-bg .cover-text {
+    opacity: 1;
+    color: #FFF;
+    padding: 30px;
+    font-size: 1.6em;
+    font-family: DINNextRoundedLTPro_Regular;
+}
+
+#amde-cover .cover-text-bg .cover-text .text-bolder {
+    font-family: DINNextRoundedLTPro_Bold;
 }
 
 /* SERVICES */
+
+#amde-services {
+    padding: 0 10vw; 
+    height: 60vh;
+}
+
+#amde-services, #amde-services .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#amde-services .service {
+    flex-flow: column;
+}
+
+#amde-services .service .service-ico {
+    background-image: url(./Assets/images/ICONO-B-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+#amde-services .service .service-title {
+    font-family: DINNextRoundedLTPro_Medium;
+    color: rgb(72, 173, 217);
+    font-size: 1.15em;
+    padding-top: 20px;
+}
+
+#amde-services .service p {
+    padding: 5px 20px;
+}
 
 /* MEMBERS */
 
@@ -85,6 +144,8 @@ p {
 #amde-volunteer .logo img {
     width: 200px;
 }
+
+/* CONTACT */
 
 /* FOOTER */
 
@@ -109,3 +170,5 @@ p {
 .ico-instagram {
     background-image: url(./Assets/images/ICONO-A-1.png);
 }
+
+/* BASIC RESPONSIVE */
