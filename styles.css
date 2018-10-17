@@ -29,13 +29,18 @@ p {
     font-family: DINNextRoundedLTPro_Light;
 }
 
+h2 {
+    font-family: DINNextRoundedLTPro_Bold;
+    font-size: 3.1em;
+}
+
 /* HEADER */
 
 #amde-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90vw;
+    width: 88vw;
     height: 10vh;
     padding: 0 5vw;
     background: #FFF;
@@ -69,7 +74,7 @@ p {
     background-image: url(./Assets/images/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 90vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -114,12 +119,20 @@ p {
     flex-flow: column;
 }
 
+#amde-services .service:hover {
+    cursor: pointer;
+}
+
 #amde-services .service .service-ico {
     background-image: url(./Assets/images/ICONO-B-2.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100px;
     height: 100px;
+}
+
+#amde-services .service:hover > .service-ico {
+    background-image: url(./Assets/images/ICONO-B-1.png);
 }
 
 #amde-services .service .service-title {
@@ -129,25 +142,199 @@ p {
     padding-top: 20px;
 }
 
+#amde-services .service:hover > .service-title {
+    color: rgb(57, 100, 153);
+}
+
 #amde-services .service p {
-    padding: 5px 20px;
+    padding: 5px 40px;
+}
+
+/* INFO */
+
+#amde-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    padding: 0 5vw; 
+    height: 40vh;
+}
+
+#amde-info h2 {
+    color: rgb(72, 173, 217);
+}
+
+#amde-info p {
+    font-size: 1.4em;
+    padding: 2vh 5vw;
 }
 
 /* MEMBERS */
 
+#amde-members {
+    padding: 0 10vw;
+}
+
+#amde-members .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 10vh 0;
+}
+
 #amde-members .logo img {
-    width: 200px;
+    width: 800px;
+}
+
+#amde-members .members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#amde-members .member {
+    justify-self: center;
+    text-align: center;
+}
+
+#amde-members .member .member-picture {
+    position: relative;
+    background-image: url(./Assets/images/member.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+#amde-members .member .member-picture .member-info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    color: #fff;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility .2s;
+}
+
+#amde-members .member .member-picture:hover .member-info {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+#amde-members .member p {
+    font-size: 1.5em;
+    padding-top: 15px;
+}
+
+#amde-members .amde-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+#amde-members .amde-stats .amde-stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 6vw;
+}
+
+#amde-members .amde-stats .amde-stat .quantity {
+    font-size: 4.7em;
+    color: rgb(57, 100, 153);
+    font-family: DINNextRoundedLTPro_Bold;
+}
+
+#amde-members .amde-stats .amde-stat p {
+    font-size: 1.5em;
 }
 
 /* VOLUNTEER */
 
+#amde-volunteer {
+    background-image: url(./Assets/images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+}
+
+#amde-volunteer .volunteer-bg-color {
+    background-color: rgba(44, 44, 44, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
 #amde-volunteer .logo img {
-    width: 200px;
+    width: 250px;
+}
+
+#amde-volunteer .volunteer-info {
+    width: 650px;
+    padding-left: 50px;
+}
+
+#amde-volunteer .volunteer-info h2{
+    color: #FFF;
+    font-size: 2.4em;
+}
+
+#amde-volunteer .volunteer-info p {
+    color: #FFF;
+    font-size: 1.5em;
+    padding-top: 20px;
 }
 
 /* CONTACT */
 
+#amde-contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    border: 1px solid;
+}
+
+#amde-contact .contact {
+    width: 65vw;
+    border: 1px solid;
+}
+
+#amde-contact h2 {
+    color: rgb(57, 100, 153);
+    text-align: left;
+}
+
+#amde-contact .contact-name, #amde-contact .contact-email, 
+#amde-contact .contact-message {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+}
+
 /* FOOTER */
+
+#amde-footer {
+    height: 60vh;
+}
 
 #amde-footer span {
     display: inline-block;
