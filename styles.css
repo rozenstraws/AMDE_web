@@ -40,7 +40,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 88vw;
     height: 10vh;
     padding: 0 5vw;
     background: #FFF;
@@ -307,13 +306,12 @@ h2 {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: column;
     text-align: center;
 }
 
 #amde-contact .contact {
-    width: 60vw;
+    padding: 0 20vw;
 }
 
 #amde-contact h2 {
@@ -323,7 +321,7 @@ h2 {
 
 #amde-contact .contact .contact-name p, #amde-contact .contact
 .contact-email p, #amde-contact .contact .contact-message p {
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: DINNextRoundedLTPro_Medium;
     color: rgb(57, 100, 153);
 }
@@ -356,10 +354,12 @@ h2 {
 
 #amde-contact .contact .contact-alert p {
     padding-top: 10px;
+    font-size: 1.2em;
+    color: rgb(57, 100, 153);
 }
 
 #amde-contact .contact .contact-alert button {
-    padding: 5px 30px;
+    padding: 5px 40px;
     border-radius: 5px;
     border: 0;
     font-size: 1em;
@@ -381,28 +381,35 @@ h2 {
 
 /* FOOTER */
 
-#amde-footer {
-    height: 50vh;
+#amde-footer .footer, #amde-footer .footer-bottom {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: column;
-    background-color: rgb(57, 100, 153);
 }
 
 #amde-footer .footer {
-    width: 60vw;
+    background-color: rgb(57, 100, 153);
+    height: 40vh;
+    color: #FFF;
+    padding-left: 20vw;
+}
+
+#amde-footer .footer p {
+    font-family: DINNextRoundedLTPro_Light;
+    font-size: 1.2em;
+    padding: 20px 0;
 }
 
 #amde-footer .footer h2 {
     font-size: 2.4em;
 }
 
-#amde-footer .footer span {
+#amde-footer .footer .footer-icons span {
     background-size: contain;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
 }
 
 .ico-youtube {
@@ -421,11 +428,13 @@ h2 {
     background-image: url(./Assets/images/WEB_AMDE_redes-04.png);
 }
 
-.bottom-footer {
-    background-color: #000;
+#amde-footer .footer-bottom {
+    background-color: rgb(36, 41, 37);
     width: 100%;
-    height: 5vh;
+    height: 8vh;
+    font-size: 0.9em;
     color: #FFF;
+    align-items: center;
 }
 
 /* BASIC RESPONSIVE */
