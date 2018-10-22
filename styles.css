@@ -36,14 +36,22 @@ h2 {
 
 /* HEADER */
 
-#amde-header {
+#amde-header { 
+    width: 100vw;
+    background: #FFF;
+    z-index: 1;
+}
+
+#amde-header .header {
+    height: 10vh;
+    padding: 0 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
-    padding: 0 5vw;
-    background: #FFF;
-    z-index: 1;
+}
+
+.header-fixed {
+    position: fixed;
 }
 
 #amde-header .header-logo img {
