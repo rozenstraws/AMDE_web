@@ -310,17 +310,66 @@ h2 {
     align-items: center;
     flex-flow: column;
     text-align: center;
-    border: 1px solid;
 }
 
 #amde-contact .contact {
-    width: 65vw;
-    border: 1px solid;
+    width: 60vw;
 }
 
 #amde-contact h2 {
     color: rgb(57, 100, 153);
     text-align: left;
+}
+
+#amde-contact .contact .contact-name p, #amde-contact .contact
+.contact-email p, #amde-contact .contact .contact-message p {
+    font-size: 1em;
+    font-family: DINNextRoundedLTPro_Medium;
+    color: rgb(57, 100, 153);
+}
+
+#amde-contact .contact input, #amde-contact .contact textarea {
+    width: 45vw;
+    height: 25px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(231, 232, 234);
+    color: rgb(57, 100, 153);
+    font-size: 1em;
+    font-family: DINNextRoundedLTPro_Regular;
+}
+
+#amde-contact .contact .contact-name, #amde-contact .contact
+.contact-email, #amde-contact .contact .contact-message {
+    padding: 15px 0;
+}
+
+#amde-contact .contact .contact-message textarea {
+    resize: none;
+    height: 20vh;
+}
+
+#amde-contact .contact .contact-alert {
+    height: 10vh;
+}
+
+#amde-contact .contact .contact-alert p {
+    padding-top: 10px;
+}
+
+#amde-contact .contact .contact-alert button {
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1em;
+    font-family: DINNextRoundedLTPro_Medium;
+    background-color: rgb(57, 100, 153);
+    color: #FFF;
+}
+
+#amde-contact .contact .contact-alert button:hover {
+    cursor: pointer;
 }
 
 #amde-contact .contact-name, #amde-contact .contact-email, 
@@ -333,29 +382,50 @@ h2 {
 /* FOOTER */
 
 #amde-footer {
-    height: 60vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: rgb(57, 100, 153);
 }
 
-#amde-footer span {
+#amde-footer .footer {
+    width: 60vw;
+}
+
+#amde-footer .footer h2 {
+    font-size: 2.4em;
+}
+
+#amde-footer .footer span {
+    background-size: contain;
     display: inline-block;
     width: 40px;
     height: 40px;
 }
 
 .ico-youtube {
-    background-image: url(./Assets/images/ICONO-A-1.png);
+    background-image: url(./Assets/images/WEB_AMDE_redes-01.png);
 }
 
 .ico-facebook {
-    background-image: url(./Assets/images/ICONO-A-1.png);
+    background-image: url(./Assets/images/WEB_AMDE_redes-02.png)
 }
 
 .ico-twitter {
-    background-image: url(./Assets/images/ICONO-A-1.png);
+    background-image: url(./Assets/images/WEB_AMDE_redes-03.png);
 }
 
 .ico-instagram {
-    background-image: url(./Assets/images/ICONO-A-1.png);
+    background-image: url(./Assets/images/WEB_AMDE_redes-04.png);
+}
+
+.bottom-footer {
+    background-color: #000;
+    width: 100%;
+    height: 5vh;
+    color: #FFF;
 }
 
 /* BASIC RESPONSIVE */
