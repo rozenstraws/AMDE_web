@@ -29,25 +29,44 @@ p {
     font-family: DINNextRoundedLTPro_Light;
 }
 
+.bigger-text {
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-family: DINNextRoundedLTPro_Bold;
+    font-size: 2.6em;
+}
+
 h2 {
     font-family: DINNextRoundedLTPro_Bold;
     font-size: 3.1em;
 }
 
+.title {
+    color: rgb(72, 173, 217);
+    font-family: DINNextRoundedLTPro_Medium;
+    font-size: 1.15em;
+}
+
 /* HEADER */
 
-#amde-header { 
+#amde-header {
     width: 100vw;
     background: #FFF;
     z-index: 1;
 }
 
+#amde-header .header, #amde-header .nav-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
 #amde-header .header {
     height: 10vh;
     padding: 0 5vw;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .header-fixed {
@@ -55,24 +74,20 @@ h2 {
 }
 
 #amde-header .header-logo img {
-    width: 100px;
+    width: 220px;
 }
 
 #amde-header .nav-elements {
-    display: flex;
-    justify-content: space-between;
     width: 40vw;
 }
 
-#amde-header .nav-elements .nav-element {
-    font-family: DINNextRoundedLTPro_Medium;
-    font-size: 1.15em;
-    color: rgb(72, 173, 217);
-    cursor: pointer;
+#amde-header .nav-element a {
+    text-decoration: none;
 }
 
-#amde-header .nav-elements .nav-element:hover {
+#amde-header .title:hover {
     color: rgb(57, 100, 153);
+    cursor: pointer;
 }
 
 /* COVER */
@@ -82,21 +97,22 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
-    display: flex;
     justify-content: flex-end;
+}
+
+#amde-cover, #amde-cover .cover-text-bg {
+    display: flex;
     align-items: center;
 }
 
 #amde-cover .cover-text-bg {
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
     width: 500px;
     height: 150px;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-#amde-cover .cover-text-bg .cover-text {
+#amde-cover .cover-text {
     opacity: 1;
     color: #FFF;
     padding: 30px;
@@ -104,18 +120,19 @@ h2 {
     font-family: DINNextRoundedLTPro_Regular;
 }
 
-#amde-cover .cover-text-bg .cover-text .text-bolder {
+#amde-cover .text-bolder {
     font-family: DINNextRoundedLTPro_Bold;
 }
 
 /* SERVICES */
 
 #amde-services {
-    padding: 0 10vw; 
+    padding: 0 10vw;
     height: 60vh;
 }
 
-#amde-services, #amde-services .service {
+#amde-services,
+#amde-services .service {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +147,7 @@ h2 {
     cursor: pointer;
 }
 
-#amde-services .service .service-ico {
+#amde-services .service-ico {
     background-image: url(./Assets/images/ICONO-B-2.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -138,18 +155,15 @@ h2 {
     height: 100px;
 }
 
-#amde-services .service:hover > .service-ico {
+#amde-services .service:hover>.service-ico {
     background-image: url(./Assets/images/ICONO-B-1.png);
 }
 
-#amde-services .service .service-title {
-    font-family: DINNextRoundedLTPro_Medium;
-    color: rgb(72, 173, 217);
-    font-size: 1.15em;
+#amde-services .service-title {
     padding-top: 20px;
 }
 
-#amde-services .service:hover > .service-title {
+#amde-services .service:hover>.service-title {
     color: rgb(57, 100, 153);
 }
 
@@ -165,8 +179,9 @@ h2 {
     align-items: center;
     text-align: center;
     flex-flow: column;
-    padding: 0 5vw; 
-    height: 40vh;
+    padding: 0 5vw;
+    height: 100vh;
+    padding-top: 10vh;
 }
 
 #amde-info h2 {
@@ -178,22 +193,14 @@ h2 {
     padding: 2vh 5vw;
 }
 
+#amde-info .logo img {
+    width: 750px;
+}
+
 /* MEMBERS */
 
 #amde-members {
     padding: 0 10vw;
-}
-
-#amde-members .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    padding: 10vh 0;
-}
-
-#amde-members .logo img {
-    width: 800px;
 }
 
 #amde-members .members {
@@ -207,7 +214,7 @@ h2 {
     text-align: center;
 }
 
-#amde-members .member .member-picture {
+#amde-members .member-picture {
     position: relative;
     background-image: url(./Assets/images/member.png);
     background-repeat: no-repeat;
@@ -217,7 +224,7 @@ h2 {
     border-radius: 50%;
 }
 
-#amde-members .member .member-picture .member-info {
+#amde-members .member-info {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -234,14 +241,19 @@ h2 {
     transition: opacity .2s, visibility .2s;
 }
 
-#amde-members .member .member-picture:hover .member-info {
+#amde-members .member-picture:hover .member-info {
     opacity: 1;
     visibility: visible;
     cursor: pointer;
 }
 
-#amde-members .member p {
-    font-size: 1.5em;
+#amde-members .member-name, #amde-members .detail,
+#amde-members .member-info span {
+    font-family: DINNextRoundedLTPro_Light;
+    font-size: 1.4em;
+}
+
+#amde-members .member-name {
     padding-top: 15px;
 }
 
@@ -252,7 +264,7 @@ h2 {
     height: 35vh;
 }
 
-#amde-members .amde-stats .amde-stat {
+#amde-members .amde-stat {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,13 +272,13 @@ h2 {
     padding: 0 6vw;
 }
 
-#amde-members .amde-stats .amde-stat .quantity {
+#amde-members .quantity {
     font-size: 4.7em;
     color: rgb(57, 100, 153);
     font-family: DINNextRoundedLTPro_Bold;
 }
 
-#amde-members .amde-stats .amde-stat p {
+#amde-members .amde-stat p {
     font-size: 1.5em;
 }
 
@@ -297,14 +309,12 @@ h2 {
     padding-left: 50px;
 }
 
-#amde-volunteer .volunteer-info h2{
+#amde-volunteer .volunteer-info h2 {
     color: #FFF;
     font-size: 2.4em;
 }
 
-#amde-volunteer .volunteer-info p {
-    color: #FFF;
-    font-size: 1.5em;
+#amde-volunteer .bigger-text {
     padding-top: 20px;
 }
 
@@ -312,6 +322,7 @@ h2 {
 
 #amde-contact {
     height: 100vh;
+    padding-top: 10vh;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -327,14 +338,16 @@ h2 {
     text-align: left;
 }
 
-#amde-contact .contact .contact-name p, #amde-contact .contact
-.contact-email p, #amde-contact .contact .contact-message p {
+#amde-contact .contact-name span,
+#amde-contact .contact-email span,
+#amde-contact .contact-message span {
     font-size: 1.1em;
     font-family: DINNextRoundedLTPro_Medium;
     color: rgb(57, 100, 153);
 }
 
-#amde-contact .contact input, #amde-contact .contact textarea {
+#amde-contact .contact input,
+#amde-contact .contact textarea {
     width: 45vw;
     height: 25px;
     padding-left: 10px;
@@ -346,41 +359,51 @@ h2 {
     font-family: DINNextRoundedLTPro_Regular;
 }
 
-#amde-contact .contact .contact-name, #amde-contact .contact
-.contact-email, #amde-contact .contact .contact-message {
+#amde-contact .contact-name,
+#amde-contact .contact-email,
+#amde-contact .contact-message {
     padding: 15px 0;
 }
 
-#amde-contact .contact .contact-message textarea {
+#amde-contact .contact-message textarea {
     resize: none;
     height: 20vh;
 }
 
-#amde-contact .contact .contact-alert {
+#amde-contact .contact-alert {
     height: 10vh;
 }
 
-#amde-contact .contact .contact-alert p {
+#amde-contact .contact-alert p {
     padding-top: 10px;
     font-size: 1.2em;
     color: rgb(57, 100, 153);
 }
 
-#amde-contact .contact .contact-alert button {
+#amde-contact .contact-alert button {
     padding: 5px 40px;
     border-radius: 5px;
-    border: 0;
+    border: none;
     font-size: 1em;
     font-family: DINNextRoundedLTPro_Medium;
     background-color: rgb(57, 100, 153);
     color: #FFF;
+    box-shadow: 0 5px #999;
 }
 
-#amde-contact .contact .contact-alert button:hover {
+#amde-contact .contact-alert button:hover {
     cursor: pointer;
+    background-color: rgb(57, 100, 154);
 }
 
-#amde-contact .contact-name, #amde-contact .contact-email, 
+#amde-contact .contact-alert button:active {
+    background-color: rgb(57, 100, 154);
+    box-shadow: 0 2.5px #666;
+    transform: translateY(4px);
+}
+
+#amde-contact .contact-name,
+#amde-contact .contact-email,
 #amde-contact .contact-message {
     display: flex;
     justify-content: space-between;
@@ -389,7 +412,8 @@ h2 {
 
 /* FOOTER */
 
-#amde-footer .footer, #amde-footer .footer-bottom {
+#amde-footer .footer,
+#amde-footer .footer-bottom {
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -403,8 +427,6 @@ h2 {
 }
 
 #amde-footer .footer p {
-    font-family: DINNextRoundedLTPro_Light;
-    font-size: 1.2em;
     padding: 20px 0;
 }
 
@@ -412,7 +434,7 @@ h2 {
     font-size: 2.4em;
 }
 
-#amde-footer .footer .footer-icons span {
+#amde-footer .footer-icons span {
     background-size: contain;
     display: inline-block;
     width: 45px;
@@ -420,20 +442,25 @@ h2 {
     margin-right: 10px;
 }
 
-.ico-youtube {
+#amde-footer .ico-youtube {
     background-image: url(./Assets/images/WEB_AMDE_redes-01.png);
 }
 
-.ico-facebook {
+#amde-footer .ico-facebook {
     background-image: url(./Assets/images/WEB_AMDE_redes-02.png)
 }
 
-.ico-twitter {
+#amde-footer .ico-twitter {
     background-image: url(./Assets/images/WEB_AMDE_redes-03.png);
 }
 
-.ico-instagram {
+#amde-footer .ico-instagram {
     background-image: url(./Assets/images/WEB_AMDE_redes-04.png);
+}
+
+#amde-footer .footer-icons span:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
 }
 
 #amde-footer .footer-bottom {
