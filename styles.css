@@ -58,7 +58,8 @@ h2 {
     z-index: 1;
 }
 
-#amde-header .header, #amde-header .nav-elements {
+#amde-header .header,
+#amde-header .nav-elements {
     display: flex;
     justify-content: space-between;
 }
@@ -100,7 +101,8 @@ h2 {
     justify-content: flex-end;
 }
 
-#amde-cover, #amde-cover .cover-text-bg {
+#amde-cover,
+#amde-cover .cover-text-bg {
     display: flex;
     align-items: center;
 }
@@ -247,7 +249,8 @@ h2 {
     cursor: pointer;
 }
 
-#amde-members .member-name, #amde-members .detail,
+#amde-members .member-name,
+#amde-members .detail,
 #amde-members .member-info span {
     font-family: DINNextRoundedLTPro_Light;
     font-size: 1.4em;
@@ -257,19 +260,19 @@ h2 {
     padding-top: 15px;
 }
 
+#amde-members .amde-stat,
 #amde-members .amde-stats {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh;
 }
 
 #amde-members .amde-stat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
     padding: 0 6vw;
+}
+
+#amde-members .amde-stats {
+    height: 35vh;
 }
 
 #amde-members .quantity {
@@ -473,3 +476,154 @@ h2 {
 }
 
 /* BASIC RESPONSIVE */
+
+/* TABLET */
+
+@media (max-width: 768px) {}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+    .bigger-text {
+        font-size: 1.1em;
+    }
+    h1 {
+        font-family: DINNextRoundedLTPro_Bold;
+        font-size: 2.2em;
+    }
+    
+    h2 {
+        font-family: DINNextRoundedLTPro_Bold;
+        font-size: 2.6em;
+    }
+    .title {
+        font-size: 1.1em;
+    }
+    /* HEADER */
+    #amde-header .header {
+        height: 10vh;
+        padding: 0;
+    }
+    #amde-header .header,
+    #amde-header .nav-elements {
+        justify-content: space-between;
+    }
+    #amde-header .header-logo img {
+        width: 200px;
+    }
+    #amde-header .nav-elements {
+        width: 100%;
+    }
+    /* COVER */
+    #amde-cover {
+        height: 90vh;
+        background-position: center;
+        justify-content: center;
+    }
+    #amde-cover .cover-text-bg {
+        justify-content: center;
+        width: 100%;
+    }
+    #amde-cover .cover-text {
+        padding: 0;
+    }
+    /* SERVICES */
+    #amde-services {
+        height: 100%;
+        flex-flow: column;
+        margin-top: 10vh;
+    }
+    #amde-services .service p {
+        padding: 5px;
+    }
+    /* MEMBERS */
+    #amde-members {
+        padding: 0;
+    }
+    #amde-members .members {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    /* INFO */
+    #amde-info {
+        height: 100vh;
+    }
+    #amde-info p {
+        padding: 0;
+    }
+    #amde-info .logo img {
+        width: 400px;
+    }
+    #amde-members .amde-stats {
+        flex-flow: column;
+        height: 60vh;
+    }
+    #amde-members .amde-stat {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    /* MEMBERS */
+    #amde-members {}
+    /* VOLUNTEER */
+    #amde-volunteer {
+        height: 100%;
+    }
+    #amde-volunteer .volunteer-bg-color {
+        flex-flow: column;
+        height: 100%;
+    }
+    #amde-volunteer .volunteer-info {
+        width: 100%;
+        padding-left: 0;
+    }
+    /* CONTACT */
+    #amde-contact {
+        height: 100%;
+    }
+    #amde-contact .contact {
+        padding: 0;
+    }
+    #amde-contact h2 {
+        text-align: center;
+    }
+    #amde-contact .contact input,
+    #amde-contact .contact textarea {
+        padding-left: 5px;
+    }
+    #amde-contact .contact-name,
+    #amde-contact .contact-email,
+    #amde-contact .contact-message {
+        flex-flow: column;
+    }
+    #amde-contact .contact input,
+    #amde-contact .contact textarea {
+        width: 100%;
+    }
+    #amde-contact .contact-message textarea {
+        height: 30vh;
+    }
+    #amde-contact .contact-alert {
+        height: 10vh;
+    }
+    /* FOOTER */
+    #amde-footer .footer,
+    #amde-footer .footer-bottom {
+        align-items: center;
+        text-align: center;
+    }
+    #amde-footer .footer {
+        height: 80vh;
+        padding-left: 0;
+    }
+    .display-br {
+        display: none;
+    }
+    #amde-footer .footer span {
+        margin-right: 10px;
+        ;
+    }
+    #amde-footer .footer-bottom {
+        height: 20vh;
+    }
+}
