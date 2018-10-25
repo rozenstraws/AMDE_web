@@ -53,7 +53,7 @@ h2 {
 /* HEADER */
 
 #amde-header {
-    width: 100vw;
+    width: 100%;
     background: #FFF;
     z-index: 1;
 }
@@ -129,8 +129,8 @@ h2 {
 /* SERVICES */
 
 #amde-services {
-    padding: 0 10vw;
     height: 60vh;
+    padding: 10vh 10vw 0;
 }
 
 #amde-services,
@@ -153,8 +153,9 @@ h2 {
     background-image: url(./Assets/images/ICONO-B-2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100px;
-    height: 100px;
+    height: 15vh;
+    width: 15vw;
+    background-position: center;
 }
 
 #amde-services .service:hover>.service-ico {
@@ -491,13 +492,12 @@ h2 {
         font-family: DINNextRoundedLTPro_Bold;
         font-size: 2.2em;
     }
-    
     h2 {
         font-family: DINNextRoundedLTPro_Bold;
         font-size: 2.6em;
     }
     .title {
-        font-size: 1.1em;
+        font-size: 1em;
     }
     /* HEADER */
     #amde-header .header {
@@ -533,6 +533,12 @@ h2 {
         flex-flow: column;
         margin-top: 10vh;
     }
+    #amde-services .service {
+        margin: 10px;
+    }
+    #amde-services .service-title {
+        padding-top: 5px;
+    }
     #amde-services .service p {
         padding: 5px;
     }
@@ -550,6 +556,7 @@ h2 {
         height: 100vh;
     }
     #amde-info p {
+        font-size: 1.25em;
         padding: 0;
     }
     #amde-info .logo img {
@@ -572,17 +579,22 @@ h2 {
     #amde-volunteer .volunteer-bg-color {
         flex-flow: column;
         height: 100%;
+        text-align: center;
+        padding: 0 5vw;
     }
     #amde-volunteer .volunteer-info {
         width: 100%;
         padding-left: 0;
+    }
+    #amde-volunteer .bigger-text {
+        padding-top: 10px;
     }
     /* CONTACT */
     #amde-contact {
         height: 100%;
     }
     #amde-contact .contact {
-        padding: 0;
+        padding: 0 5vw;
     }
     #amde-contact h2 {
         text-align: center;
@@ -616,12 +628,14 @@ h2 {
         height: 80vh;
         padding-left: 0;
     }
+    #amde-footer .footer p {
+        padding: 20px 5vw;
+    }
     .display-br {
         display: none;
     }
     #amde-footer .footer span {
         margin-right: 10px;
-        ;
     }
     #amde-footer .footer-bottom {
         height: 20vh;
