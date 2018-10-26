@@ -480,20 +480,15 @@ h2 {
 
 /* TABLET */
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
 
-/* MOBILE */
-
-@media (max-width: 480px) {
     .bigger-text {
         font-size: 1.1em;
     }
     h1 {
-        font-family: DINNextRoundedLTPro_Bold;
         font-size: 2.2em;
     }
     h2 {
-        font-family: DINNextRoundedLTPro_Bold;
         font-size: 2.6em;
     }
     .title {
@@ -502,7 +497,6 @@ h2 {
     /* HEADER */
     #amde-header .header {
         height: 10vh;
-        padding: 0;
     }
     #amde-header .header,
     #amde-header .nav-elements {
@@ -510,9 +504,6 @@ h2 {
     }
     #amde-header .header-logo img {
         width: 200px;
-    }
-    #amde-header .nav-elements {
-        width: 100%;
     }
     /* COVER */
     #amde-cover {
@@ -570,8 +561,6 @@ h2 {
         padding: 0;
         justify-content: space-evenly;
     }
-    /* MEMBERS */
-    #amde-members {}
     /* VOLUNTEER */
     #amde-volunteer {
         height: 100%;
@@ -637,7 +626,23 @@ h2 {
     #amde-footer .footer span {
         margin-right: 10px;
     }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+    /* HEADER */
+    #amde-header .header {
+        padding: 0;
+    }
+    #amde-header .nav-elements {
+        width: 100%;
+    }
+    /* FOOTER */
+    #amde-footer .footer {
+        height: 75vh;
+    }
     #amde-footer .footer-bottom {
-        height: 20vh;
+        height: 15vh;
     }
 }
