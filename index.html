@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Página web de la AMDE (Asociación Mendocina de Deportes Electrónicos)">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="Assets/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
     <title>AMDE | Página Web Oficial</title>
 </head>
 
@@ -14,19 +14,21 @@
     <header id="amde-header">
         <div class="header">
             <div class="header-logo">
-                <a href="#amde-cover"><img src="./Assets/images/LOGO_mod.png" alt="Logo de AMDE."></a>
+                <a href="#amde-cover"><div class="logo"></div></a>
             </div>
-            <div class="nav-elements">
-                <div class="nav-element">
-                    <a href="#amde-cover"><span class="title">HOME</span></a>
-                </div>
-                <div class="nav-element">
-                    <a href="#amde-info"><span class="title">¿QUIENES SOMOS?</span></a>
-                </div>
-                <div class="nav-element">
-                    <a href="#amde-contact"><span class="title">CONTACTO</span></a>
-                </div>
-            </div>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="#amde-cover" class="title">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#amde-info" class="title">¿QUIENES SOMOS?</a>
+                    </li>
+                    <li>
+                        <a href="#amde-contact" class="title">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <section id="amde-cover">
@@ -69,7 +71,6 @@
     </section>
     <section id="amde-members">
         <div class="members">
-            <!-- GRID MIEMBROS -->
             <div class="member">
                 <div class="member-picture">
                     <div class="member-info">
@@ -133,7 +134,15 @@
                     </div>
                 </div>
                 <div class="member-name">ASDASD</div>
-            </div class="member">
+            </div>
+            <div class="member">
+                <div class="member-picture">
+                    <div class="member-info">
+                        <span>Secretaría de Desarrollo</span>
+                    </div>
+                </div>
+                <div class="member-name">ASDASD</div>
+            </div>
         </div>
         <div class="amde-stats">
             <div class="amde-stat">

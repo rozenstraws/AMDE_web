@@ -55,34 +55,36 @@ h2 {
 #amde-header {
     width: 100%;
     background: #FFF;
-    z-index: 1;
-}
-
-#amde-header .header,
-#amde-header .nav-elements {
-    display: flex;
-    justify-content: space-between;
-}
-
-#amde-header .header {
-    height: 10vh;
-    padding: 0 5vw;
-    align-items: center;
+    z-index: 999;
 }
 
 .header-fixed {
     position: fixed;
 }
 
-#amde-header .header-logo img {
-    width: 220px;
+#amde-header .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
 }
 
-#amde-header .nav-elements {
-    width: 40vw;
+#amde-header .logo {
+    background-image: url(./Assets/images/LOGO_mod.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 10vh;
 }
 
-#amde-header .nav-element a {
+#amde-header #nav ul li {
+    float: left;
+    list-style: none;
+    padding-left: 40px;
+}
+
+#amde-header #nav ul li a {
     text-decoration: none;
 }
 
@@ -150,16 +152,16 @@ h2 {
 }
 
 #amde-services .service-ico {
-    background-image: url(./Assets/images/ICONO-B-2.png);
+    background-image: url(./Assets/icons/ICONO-B-2.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 15vh;
-    width: 15vw;
+    width: 100px;
     background-position: center;
 }
 
 #amde-services .service:hover>.service-ico {
-    background-image: url(./Assets/images/ICONO-B-1.png);
+    background-image: url(./Assets/icons/ICONO-B-1.png);
 }
 
 #amde-services .service-title {
@@ -207,14 +209,17 @@ h2 {
 }
 
 #amde-members .members {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 #amde-members .member {
     justify-self: center;
     text-align: center;
+    margin: 20px;
 }
 
 #amde-members .member-picture {
@@ -222,8 +227,6 @@ h2 {
     background-image: url(./Assets/images/member.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 230px;
-    height: 230px;
     border-radius: 50%;
 }
 
@@ -233,15 +236,19 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 230px;
-    height: 230px;
     border-radius: 50%;
-    color: #fff;
+    color: #FFF;
     opacity: 0;
     margin: 0;
     padding: 0;
     visibility: hidden;
     transition: opacity .2s, visibility .2s;
+}
+
+#amde-members .member-picture,
+#amde-members .member-info {
+    width: 250px;
+    height: 250px;
 }
 
 #amde-members .member-picture:hover .member-info {
@@ -258,7 +265,7 @@ h2 {
 }
 
 #amde-members .member-name {
-    padding-top: 15px;
+    margin-top: 20px;
 }
 
 #amde-members .amde-stat,
@@ -447,19 +454,19 @@ h2 {
 }
 
 #amde-footer .ico-youtube {
-    background-image: url(./Assets/images/WEB_AMDE_redes-01.png);
+    background-image: url(./Assets/icons/WEB_AMDE_redes-01.png);
 }
 
 #amde-footer .ico-facebook {
-    background-image: url(./Assets/images/WEB_AMDE_redes-02.png)
+    background-image: url(./Assets/icons/WEB_AMDE_redes-02.png)
 }
 
 #amde-footer .ico-twitter {
-    background-image: url(./Assets/images/WEB_AMDE_redes-03.png);
+    background-image: url(./Assets/icons/WEB_AMDE_redes-03.png);
 }
 
 #amde-footer .ico-instagram {
-    background-image: url(./Assets/images/WEB_AMDE_redes-04.png);
+    background-image: url(./Assets/icons/WEB_AMDE_redes-04.png);
 }
 
 #amde-footer .footer-icons span:hover {
@@ -481,7 +488,6 @@ h2 {
 /* TABLET */
 
 @media (max-width: 768px) {
-
     .bigger-text {
         font-size: 1.1em;
     }
@@ -495,15 +501,9 @@ h2 {
         font-size: 1em;
     }
     /* HEADER */
-    #amde-header .header {
-        height: 10vh;
-    }
-    #amde-header .header,
-    #amde-header .nav-elements {
-        justify-content: space-between;
-    }
-    #amde-header .header-logo img {
-        width: 200px;
+    #amde-header .logo {
+        background-image: url(./Assets/images/MARCAS-39.png);
+        width: 100px;
     }
     /* COVER */
     #amde-cover {
@@ -537,10 +537,13 @@ h2 {
     #amde-members {
         padding: 0;
     }
-    #amde-members .members {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
+    #amde-members .member-picture,
+    #amde-members .member-info {
+        width: 180px;
+        height: 180px;
+    }
+    #amde-header #nav ul li {
+        padding-left: 5px;
     }
     /* INFO */
     #amde-info {
@@ -631,12 +634,35 @@ h2 {
 /* MOBILE */
 
 @media (max-width: 480px) {
+    .bigger-text {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2.4em;
+    }
+    .title {
+        font-size: 0.9em;
+    }
     /* HEADER */
     #amde-header .header {
-        padding: 0;
+        padding: 0 1vw;
     }
-    #amde-header .nav-elements {
-        width: 100%;
+    /* COVER */
+    #amde-cover .cover-text {
+        font-size: 1.4em;
+        text-align: center;
+    }
+    /* MEMBERS */
+    #amde-members .member-picture,
+    #amde-members .member-info {
+        width: 120px;
+        height: 120px;
+    }
+    #amde-info .logo img {
+        width: 300px;
     }
     /* FOOTER */
     #amde-footer .footer {
