@@ -1,4 +1,4 @@
 # AMDE-Web
-Repositorio para la página web de la AMDE
+Website for the asociation AMDE.
+Made with HTML5, CSS3 & JavaScript. Added responsive design. Page layout made by Juan Benitez (AMDE).
 
-Realizada en HTML5, CSS3 y JavaScript.
